@@ -50,11 +50,11 @@
    -  Measures the proportion of correct default predictions (true positives) out of all default predictions.
    - Precision considers False Positives in the evaluation process.
    -  Precision is an important metric as it evaluates the accuracy of positive predictions. Lenders need to avoid false positives (incorrectly predicting defaults) to prevent unnecessary actions. Maintaining high Precision ensures that when the model predicts a default, it is likely to be accurate. This protects lenders from unnecessary costs and maintains borrower relationships
-4.  F1 Score
+4. F1 Score
    -  The harmonic mean of precision and recall.
    -  Useful when you want to balance both metrics.
    -  A good F1-Score indicates that our classification model has good precision and recall.
-5.  AUC-ROC Score
+5. AUC-ROC Score
    -  Measures the model's ability to distinguish between borrowers who default and those who do not across all thresholds.
    -  Represented as a curve that shows the True Positive Rate (TPR) against the False Positive Rate (FPR) at various thresholds.
 
@@ -63,6 +63,7 @@
 
 ## Hyperparameter Result
 ![image](https://github.com/user-attachments/assets/164cc70a-13d4-4dd2-86c5-b3efc6ec77b5)
+
 Overall, the evaluation results of the classification model show quite good performance on the test data for gradient boost (best model):
 -  Accuracy: The gradient boost model has an accuracy of around 93%, indicating that it can correctly predict the majority of cases in the dataset.
 -  Precision: The model has high precision for both classes, approximately 93% for the non-default class and 97% for the default class. This indicates that the model tends to make few errors when predicting a specific class.
